@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EJS Example</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <main class="main">
+        <form class="frm" action="/login" method="post">
+            <h1>Login Now</h1>
+            <input type="email" name="email" />
+            <input type="password" name="password" />
+            <button type="submit">Login</button>
+            <p> <%= locals.message %> </p>
+        </form>
+    </main>
+</body>
+
+<script src="script.js"></script>
+</html>
